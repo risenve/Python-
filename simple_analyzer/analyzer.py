@@ -18,3 +18,9 @@ class Analyzer:
 
     def increasing_pairs(self):
         return sum(1 for i in range(1, len(self.numbers)) if self.numbers[i] > self.numbers[i-1])
+
+	def average_number(self):
+        return sum(self.numbers)/len(self.numbers) if self.numbers else None
+
+    def range_difference(self):
+        return max(self.numbers) - min(self.numbers) if self.numbers else None
