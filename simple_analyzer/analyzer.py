@@ -1,6 +1,8 @@
 class Analyzer:
     def __init__(self):
         self.numbers = []
+    if len(self.numbers) > 18:  # sequence_length
+            self.numbers.pop(0)
 
     def add_number(self, x):
         self.numbers.append(x)
